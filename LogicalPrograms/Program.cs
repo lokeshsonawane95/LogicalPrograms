@@ -12,6 +12,7 @@ namespace LogicalPrograms
                 Console.WriteLine("\n1. Fibonacci Series");
                 Console.WriteLine("2. Perfect Number");
                 Console.WriteLine("3. Prime Number");
+                Console.WriteLine("4. Reverse a number");
 
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("Enter your choice");
@@ -29,6 +30,10 @@ namespace LogicalPrograms
                     case 3:
                         PrimeNumber primeNumber = new PrimeNumber();
                         primeNumber.Prime();
+                        break;
+                    case 4:
+                        ReverseANumber reverseANumber = new ReverseANumber();
+                        reverseANumber.ReverseNumber();
                         break;
                 }
             }while(choice != 0);
