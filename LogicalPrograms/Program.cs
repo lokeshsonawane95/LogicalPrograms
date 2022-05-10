@@ -11,6 +11,7 @@ namespace LogicalPrograms
             {
                 Console.WriteLine("\n1. Fibonacci Series");
                 Console.WriteLine("2. Perfect Number");
+                Console.WriteLine("3. Prime Number");
 
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("Enter your choice");
@@ -24,6 +25,10 @@ namespace LogicalPrograms
                     case 2:
                         PerfectNumber perfectNumber = new PerfectNumber();
                         perfectNumber.Number();
+                        break;
+                    case 3:
+                        PrimeNumber primeNumber = new PrimeNumber();
+                        primeNumber.Prime();
                         break;
                 }
             }while(choice != 0);
