@@ -1,3 +1,3 @@
 # LogicalPrograms
 
-##1. Fibonacci Series
+# 1. Fibonacci Series
