@@ -13,6 +13,7 @@ namespace LogicalPrograms
                 Console.WriteLine("2. Perfect Number");
                 Console.WriteLine("3. Prime Number");
                 Console.WriteLine("4. Reverse a number");
+                Console.WriteLine("5. Coupon numbers");
 
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("Enter your choice");
@@ -34,6 +35,10 @@ namespace LogicalPrograms
                     case 4:
                         ReverseANumber reverseANumber = new ReverseANumber();
                         reverseANumber.ReverseNumber();
+                        break;
+                    case 5:
+                        CouponNumbers couponNumbers = new CouponNumbers();
+                        couponNumbers.Coupon();
                         break;
                 }
             }while(choice != 0);
