@@ -14,9 +14,10 @@ namespace LogicalPrograms
                 Console.WriteLine("3. Prime Number");
                 Console.WriteLine("4. Reverse a number");
                 Console.WriteLine("5. Coupon numbers");
+                Console.WriteLine("6. Simulate Stopwatch");
 
                 Console.WriteLine("0. Exit");
-                Console.WriteLine("Enter your choice");
+                Console.Write("Enter your choice : ");
                 choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -39,6 +40,10 @@ namespace LogicalPrograms
                     case 5:
                         CouponNumbers couponNumbers = new CouponNumbers();
                         couponNumbers.Coupon();
+                        break;
+                    case 6:
+                        StopWatch stopWatch = new StopWatch();
+                        stopWatch.Watch();
                         break;
                 }
             }while(choice != 0);
